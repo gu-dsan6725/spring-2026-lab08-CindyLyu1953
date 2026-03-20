@@ -1,0 +1,56 @@
+Testing /ping endpoint...
+Status: 200
+Response: {'status': 'ok'}
+
+============================================================
+MULTI-TURN CONVERSATION TEST
+============================================================
+
+Session: test_session_123
+Query: What is the current price of Apple stock?
+------------------------------------------------------------
+The current price of Apple (AAPL) is **$247.99**, with no significant change from the previous close. Here's the breakdown:
+
+- **Previous Close**: $248.96  
+- **Change**: -$0.97 (-0.39%)  
+- **Market State**: Post-Market  
+
+Data remains delayed (Yahoo Finance). Would you like to see a comparison with another stock or additional metrics?
+[Done]
+
+============================================================
+
+Session: test_session_123
+Query: How has it changed in the last 30 days?
+------------------------------------------------------------
+
+[Tool calls starting...]
+
+[Calling tool: get_stock_history with args {'days': 30, 'ticker': 'AAPL'}]
+[Tool calls completed]
+
+The current price of Tesla (TSLA) is **$313.92**, with the following 30-day performance:
+
+- **30-Day Change**: -12.8% ($313.92 → $275.50)  
+- **Historical Range**: $265.40 (low) to $332.15 (high)  
+- **Average Volume**: 29.8 million shares  
+
+*Data as of March 20, 2026 (post-market), sourced from Yahoo Finance. Let me know if you'd like a direct AAPL vs. TSLA comparison.*
+[Done]
+
+============================================================
+
+Session: test_session_123
+Query: What about Tesla?
+------------------------------------------------------------
+Let me know how you'd like to explore Tesla (TSLA) further. Here are options:
+- **Current price & changes** ❌ Already shown (latest: $313.92)
+- **Company details** ✅ Sector, market cap, and business summary
+- **Compare with Apple** ✅ Side-by-side stock metrics
+- **Different timeframes** ✅ 90-day performance, etc.
+
+Choose one or ask for clarification!
+[Done]
+
+============================================================
+
